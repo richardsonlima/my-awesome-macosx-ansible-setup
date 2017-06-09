@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Why this file, you ask? Because lazy.
+
+ansible-playbook ~/My-Awesome-MacOsx-ANSIBLE/local.yml -K -i ~/My-Awesome-MacOsx-ANSIBLE/hosts "$@"

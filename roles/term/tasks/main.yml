@@ -1,0 +1,8 @@
+---
+- name: Install Hyper.app (Mac)
+  homebrew_cask: name=hyper state=present install_options="appdir=/Applications"
+  tags: hyper
+
+- name: Add hyper config
+  copy: src=hyper.js dest=~/.hyper.js
+  tags: hyper
