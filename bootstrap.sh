@@ -15,20 +15,20 @@ set -e
 #       * check to see if gcc binary even exists ( original logic )
 # if either of the conditions are met, install dev tools
 if [[ $(/usr/bin/gcc 2>&1) =~ "no developer tools were found" ]] || [[ ! -x /usr/bin/gcc ]]; then
-    echo -e '\033[1;32m [+] Info   | Install   | xcode\033[0m'
+    echo -e '\033[1;32m [✔] Info   | Install   | xcode\033[0m'
     xcode-select --install
 fi
 
 # Download and install Homebrew
 if [[ ! -x /usr/local/bin/brew ]]; then
-    echo -e '\033[1;32m [+] Info   | Install   | homebrew\033[0m'
+    echo -e '\033[1;32m [✔] Info   | Install   | homebrew\033[0m'
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 fi
 
 
 # Download and install Ansible
 if [[ ! -x /usr/local/bin/ansible ]]; then
-    echo -e '\033[1;32m [+] Info   | Install   | Ansible\033[0m'
+    echo -e '\033[1;32m [✔] Info   | Install   | Ansible\033[0m'
     brew update
     brew install ansible
 fi
