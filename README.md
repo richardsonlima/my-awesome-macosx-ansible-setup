@@ -1,6 +1,7 @@
 My Awesome MacOsx Ansible Setup
 ===============================
 
+[![Automating MacOSX Desktop/Notebook Setup with Ansible](http://momota.github.io/images/20160818_ansible-logo.png)](https://youtu.be/U "Ansible")
 ## How to ... 
 
 ```bash
