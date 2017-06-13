@@ -22,14 +22,14 @@
 
 - name: Add configuration script
   file:
-    src: ~/My-Awesome-MacOsx-ANSIBLE/roles/utils/files/configure
+    src: ~/my-awesome-macosx-ansible-setup/roles/utils/files/configure
     dest: /usr/local/bin/configure
     state: link
   tags: utils
 
 - name: Add reconfiguration script
   file:
-    src: ~/My-Awesome-MacOsx-ANSIBLE/roles/utils/files/reconfigure
+    src: ~/my-awesome-macosx-ansible-setup/roles/utils/files/reconfigure
     dest: /usr/local/bin/reconfigure
     state: link
   tags: utils
