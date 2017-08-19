@@ -401,7 +401,7 @@ execute pathogen#infect()
 " Enable syntax highlighting
 syntax enable
 set background=dark
-#colorscheme solarized
+"colorscheme solarized
 
 
 " Set utf8 as standard encoding and en_US as the standard language
